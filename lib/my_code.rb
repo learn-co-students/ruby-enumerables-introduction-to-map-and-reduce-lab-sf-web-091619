@@ -10,9 +10,17 @@ negative_array=[]
   return negative_array
 end
 
+
 def map_to_no_change(source_array)
-  return source_array
+  no_change = []
+  index = 0
+  while i < source_array.length do
+    no_change.push( source_array[i] )
+    i += 1
+  end
+  return no_change
 end
+
 
 def map_to_double(source_array)
   index = 0
@@ -35,7 +43,11 @@ end
 end
 
 def reduce_to_total (source_array, starting_point)
-value = starting_point + 6
+i = 0
+while i< source_array.length do
+  sum += source_array[i]
+end
+starting_point+sum
 end
 
 def reduce_to_all_true(source_array)
