@@ -51,11 +51,11 @@ starting_point+sum
 end
 
 def reduce_to_all_true(source_array)
-  if source_array= true
+  if source_array.all?
     return true
 end
 
 def reduce_to_any_true(source_array)
-  if source_array= true
+  if source_array.any?
     return true
 end
