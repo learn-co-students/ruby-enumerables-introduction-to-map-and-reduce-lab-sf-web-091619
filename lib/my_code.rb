@@ -42,13 +42,14 @@ end
   return squared_array
 end
 
-def reduce_to_total (source_array, starting_point)
+def reduce_to_total (source_array, starting_point = 0)
+total = starting_point
 i = 0
 while i< source_array.length do
-  sum += source_array[i]
+  total += source_array[i]
   i+=1
 end
-starting_point+sum
+total
 end
 
 def reduce_to_all_true(source_array)
